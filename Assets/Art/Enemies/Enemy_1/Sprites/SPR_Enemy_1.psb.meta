@@ -90,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Left_Eyebrow
@@ -165,7 +166,8 @@ ScriptedImporter:
     - {x: 3, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 55, y: 227}
+    uvTransform: {x: 216, y: 682}
+    spritePosition: {x: 161, y: 455}
   - name: Right_Eyebrow
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -239,7 +241,8 @@ ScriptedImporter:
     - {x: 0, y: 1}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -159, y: 233}
+    uvTransform: {x: 112, y: 682}
+    spritePosition: {x: 271, y: 449}
   - name: Left_Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -313,7 +316,8 @@ ScriptedImporter:
     - {x: 3, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 291, y: 260}
+    uvTransform: {x: 441, y: 682}
+    spritePosition: {x: 150, y: 422}
   - name: Right_Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -387,7 +391,8 @@ ScriptedImporter:
     - {x: 1, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 20, y: 270}
+    uvTransform: {x: 286, y: 682}
+    spritePosition: {x: 266, y: 412}
   - name: Right_Eye_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -461,7 +466,8 @@ ScriptedImporter:
     - {x: 2, y: 3}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 83, y: 295}
+    uvTransform: {x: 386, y: 682}
+    spritePosition: {x: 303, y: 387}
   - name: Left_Eye_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -535,7 +541,8 @@ ScriptedImporter:
     - {x: 3, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 353, y: 283}
+    uvTransform: {x: 508, y: 682}
+    spritePosition: {x: 155, y: 399}
   - name: Mouth
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -609,7 +616,8 @@ ScriptedImporter:
     - {x: 0, y: 1}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -162, y: 369}
+    uvTransform: {x: 4, y: 682}
+    spritePosition: {x: 166, y: 313}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1183,6 +1191,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
   characterData:
     bones:
     - name: Hips
