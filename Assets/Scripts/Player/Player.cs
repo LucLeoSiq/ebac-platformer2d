@@ -10,6 +10,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        HandleMovement();
+    }
+
+    private void HandleMovement()
+    {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             //myRigidbody2D.MovePosition(myRigidbody2D.position - velocity * Time.deltaTime);
