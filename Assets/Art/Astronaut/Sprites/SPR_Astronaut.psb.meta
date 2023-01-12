@@ -90,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Left_Arm2
@@ -476,7 +477,8 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 34, y: 378}
+    uvTransform: {x: 230, y: 497}
+    spritePosition: {x: 196, y: 119}
   - name: Left_Hand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -802,7 +804,8 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 249, y: -75}
+    uvTransform: {x: 435, y: 4}
+    spritePosition: {x: 186, y: 79}
   - name: Left_Arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1090,7 +1093,8 @@ ScriptedImporter:
     - {x: 13, y: 22}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -71, y: 352}
+    uvTransform: {x: 148, y: 497}
+    spritePosition: {x: 219, y: 145}
   - name: Head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1439,7 +1443,8 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -83, y: -217}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 87, y: 221}
   - name: Antennae
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1766,7 +1771,8 @@ ScriptedImporter:
     - {x: 0, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2, y: 9}
+    uvTransform: {x: 4, y: 340}
+    spritePosition: {x: 2, y: 331}
   - name: Cannon
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2110,7 +2116,8 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -324, y: 739}
+    uvTransform: {x: 4, y: 868}
+    spritePosition: {x: 328, y: 129}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2605,7 +2612,8 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -96, y: 233}
+    uvTransform: {x: 148, y: 340}
+    spritePosition: {x: 244, y: 107}
   - name: Left_Knee
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2920,7 +2928,8 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 144, y: 207}
+    uvTransform: {x: 435, y: 247}
+    spritePosition: {x: 291, y: 40}
   - name: Left_Leg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3466,7 +3475,8 @@ ScriptedImporter:
     - {x: 0, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -255, y: 537}
+    uvTransform: {x: 4, y: 538}
+    spritePosition: {x: 259, y: 1}
   - name: Right_Knee
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3781,7 +3791,8 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 85, y: 142}
+    uvTransform: {x: 435, y: 182}
+    spritePosition: {x: 350, y: 40}
   - name: Right_Leg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4306,7 +4317,8 @@ ScriptedImporter:
     - {x: 0, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -315, y: 702}
+    uvTransform: {x: 4, y: 703}
+    spritePosition: {x: 319, y: 1}
   - name: Right_Arm2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4700,7 +4712,8 @@ ScriptedImporter:
     - {x: 24, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -154, y: 454}
+    uvTransform: {x: 230, y: 573}
+    spritePosition: {x: 384, y: 119}
   - name: Right_Hand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5055,7 +5068,8 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 29, y: 15}
+    uvTransform: {x: 435, y: 94}
+    spritePosition: {x: 406, y: 79}
   - name: Right_Arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5479,7 +5493,8 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -217, y: 448}
+    uvTransform: {x: 148, y: 593}
+    spritePosition: {x: 365, y: 145}
   characterData:
     bones:
     - name: Hips
