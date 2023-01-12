@@ -1788,7 +1788,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197856018486260313, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_text
-      value: Credits
+      value: Sobre
       objectReference: {fileID: 0}
     - target: {fileID: 869646168547127410, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Name
