@@ -84,4 +84,5 @@ public class Player : MonoBehaviour
             myRigidbody2D.transform.DOScaleX(jumpScaleX, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
         }
     }
+
 }
