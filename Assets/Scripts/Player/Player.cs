@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     public float jumpScaleX = -1.5f;
     public float animationDuration = .3f;
     public Ease ease = Ease.OutBack;
+
+    [Header("Animation Player")]
+    public string boolRun = "Run";
+    public Animator animator;
     
     private float _currentspeed;
 
@@ -42,15 +46,29 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            //myRigidbody2D.MovePosition(myRigidbody2D.position - velocity * Time.deltaTime);
+            //myRigidbody2D.MovePosition(myRigidbody2D.position - velocity * Time.deltaTime
             myRigidbody2D.velocity = new Vector2(-_currentspeed, myRigidbody2D.velocity.y);
+            if (myRigidbody2D.transform.localScale.x != -1);
+            {
+                myRigidbody2D.transform.DOScaleX(-1, .1f);
+            }
+            animator.SetBool(boolRun, true);
         }
-
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             //myRigidbody2D.MovePosition(myRigidbody2D.position + velocity * Time.deltaTime);
             myRigidbody2D.velocity = new Vector2(_currentspeed, myRigidbody2D.velocity.y);
+            if (myRigidbody2D.transform.localScale.x != -1)
+            {
+                myRigidbody2D.transform.DOScaleX(1, .1f);
+            }
+            animator.SetBool(boolRun, true);
         }
+        else
+        {
+            animator.SetBool(boolRun, false);
+        }
+
 
         if(myRigidbody2D.velocity.x > 0)
         {
