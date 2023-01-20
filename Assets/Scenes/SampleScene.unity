@@ -133,6 +133,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8007466312498025151, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
   m_PrefabInstance: {fileID: 301701829}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &39329082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1140260844151809980, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+  m_PrefabInstance: {fileID: 1140260844591743444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &39329084
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39329082}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!114 &39329087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8282541793349991981, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+  m_PrefabInstance: {fileID: 1140260844591743444}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39329082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0754b019350afeb4c9dd3a58d21a19ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &111854128
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,9 +752,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1620433270}
     m_Modifications:
+    - target: {fileID: 2403329696302037006, guid: 3de838754c767a446a5473969062a84e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3090786764695304946, guid: 3de838754c767a446a5473969062a84e, type: 3}
       propertyPath: m_Name
       value: PFB_Enemy_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090786764695304946, guid: 3de838754c767a446a5473969062a84e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8073972946613542793, guid: 3de838754c767a446a5473969062a84e, type: 3}
       propertyPath: m_RootOrder
@@ -3221,6 +3266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody2D: {fileID: 1202632917}
+  animator: {fileID: 20715483}
+  healthBase: {fileID: 1202632922}
   friction: {x: -0.3, y: 0}
   speed: 10
   speedRun: 20
@@ -3230,7 +3277,7 @@ MonoBehaviour:
   animationDuration: 0.5
   ease: 19
   boolRun: Run
-  animator: {fileID: 20715483}
+  triggerDeath: Death
 --- !u!114 &1202632922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3262,6 +3309,11 @@ SortingGroup:
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1918426282720007879, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
   m_PrefabInstance: {fileID: 301701829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1257464831 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3353302185000087151, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+  m_PrefabInstance: {fileID: 1140260844591743444}
   m_PrefabAsset: {fileID: 0}
 --- !u!212 &1259689475 stripped
 SpriteRenderer:
@@ -3555,7 +3607,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   animator: {fileID: 0}
+  healthBase: {fileID: 0}
+  timeToDestroy: 1
   triggerAttack: Attack
+  triggerDeath: Death
 --- !u!212 &1489558162 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6935664543094779335, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
@@ -4425,6 +4480,19 @@ MonoBehaviour:
   - {fileID: 2038151728}
   color: {r: 1, g: 0, b: 0, a: 1}
   duration: 0.1
+--- !u!114 &1771630216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771630214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16af4b02dd7250142bbb28618799f667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1202632921}
 --- !u!1 &1774321986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,6 +5488,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140260844151809981, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415915774298907759, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1257464831}
+    - target: {fileID: 3415915774298907759, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+      propertyPath: healthBase
+      value: 
+      objectReference: {fileID: 39329087}
+    - target: {fileID: 8282541793349991981, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+      propertyPath: startLife
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282541793349991981, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+      propertyPath: _flashColor
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282541793349991981, guid: 61ef701676f5d014192756ec2cad7ab0, type: 3}
+      propertyPath: destroyOnKill
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

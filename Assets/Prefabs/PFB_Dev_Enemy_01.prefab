@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1140260844151809981}
-  - component: {fileID: 8282541793349991981}
   - component: {fileID: 3415915774298907759}
+  - component: {fileID: 8282541793349991981}
   - component: {fileID: 5505555900182801231}
   - component: {fileID: 9131044879682194332}
   - component: {fileID: -4811721906047744073}
@@ -37,22 +37,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8282541793349991981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140260844151809980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0754b019350afeb4c9dd3a58d21a19ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startLife: 10
-  destroyOnKill: 0
-  delayToKill: 0
-  _flashColor: {fileID: 0}
 --- !u!114 &3415915774298907759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,9 +50,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  animator: {fileID: 0}
-  healthBase: {fileID: 0}
+  animator: {fileID: 3353302185000087151}
+  healthBase: {fileID: 8282541793349991981}
   triggerAttack: Attack
+  triggerDeath: Death
+--- !u!114 &8282541793349991981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140260844151809980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0754b019350afeb4c9dd3a58d21a19ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLife: 10
+  destroyOnKill: 1
+  delayToKill: 0
+  _flashColor: {fileID: 0}
 --- !u!61 &5505555900182801231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &-4811721906047744073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,22 +299,6 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
---- !u!114 &1140260843914476948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2681800247677955219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c2525498581d44aa4f4ff89d8bf86f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  animator: {fileID: 3353302185000087151}
-  healthBase: {fileID: 0}
-  triggerAttack: Attack
 --- !u!212 &2814282593320495825 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2944600070154927280, guid: 3de838754c767a446a5473969062a84e, type: 3}

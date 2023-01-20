@@ -7,6 +7,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidbody2D;
+    public Animator animator;
+
+    public  HealthBase healthBase;
 
     [Header("Speed Setup")]
     public Vector2 friction = new Vector2(.1f, 0);
@@ -22,9 +25,26 @@ public class Player : MonoBehaviour
 
     [Header("Animation Player")]
     public string boolRun = "Run";
-    public Animator animator;
+    public string triggerDeath = "Death";
+    
     
     private float _currentspeed;
+    private bool _isRunning = false;
+
+    private void Awake()
+    {
+        if(healthBase != null)
+        {
+            healthBase.OnKill += OnPlayerKill;
+        }
+    }
+
+    private void OnPlayerKill()
+    {
+        healthBase.OnKill += OnPlayerKill;
+
+        animator.SetTrigger(triggerDeath); 
+    }
 
     void Update()
     {
@@ -103,4 +123,8 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void DestroyMe()
+    {
+        Destroy(gameObject);
+    }
 }
