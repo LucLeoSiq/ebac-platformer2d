@@ -8,8 +8,10 @@ public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidbody2D;
     public Animator animator;
+    public Ease ease = Ease.OutBack;
 
-    public  HealthBase healthBase;
+
+    public HealthBase healthBase;
 
     [Header("Speed Setup")]
     public Vector2 friction = new Vector2(.1f, 0);
@@ -18,10 +20,12 @@ public class Player : MonoBehaviour
     public float forceJump = 10.0f;
 
     [Header("Animation Setup")]
-    public float jumpScaleY = 1.5f;
-    public float jumpScaleX = -1.5f;
-    public float animationDuration = .3f;
-    public Ease ease = Ease.OutBack;
+    //public float jumpScaleY = 1.5f;
+    //public float jumpScaleX = -1.5f;
+    //public float animationDuration = .3f;
+    public SOFloat soJumpScaleY;
+    public SOFloat soJumpScaleX;
+    public SOFloat soAnimationDuration;
 
     [Header("Animation Player")]
     public string boolRun = "Run";
@@ -118,8 +122,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody2D.transform.DOScaleY(jumpScaleY, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
-            myRigidbody2D.transform.DOScaleX(jumpScaleX, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
+            myRigidbody2D.transform.DOScaleY(soJumpScaleY.value, soAnimationDuration.value).SetLoops(2, LoopType.Yoyo).SetEase(ease);
+            myRigidbody2D.transform.DOScaleX(soJumpScaleY.value, soAnimationDuration.value).SetLoops(2, LoopType.Yoyo).SetEase(ease);
         }
     }
 
