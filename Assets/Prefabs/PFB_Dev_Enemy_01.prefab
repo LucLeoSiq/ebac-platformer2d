@@ -52,6 +52,7 @@ MonoBehaviour:
   damage: 10
   animator: {fileID: 3353302185000087151}
   healthBase: {fileID: 8282541793349991981}
+  timeToDestroy: 1
   triggerAttack: Attack
   triggerDeath: Death
 --- !u!114 &8282541793349991981
