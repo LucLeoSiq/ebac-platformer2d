@@ -49,6 +49,7 @@ public class GunBase : MonoBehaviour
     {
         var projectile = Instantiate(prefabProjectile);
         projectile.transform.position = positionToShoot.position;
-        projectile.side = playerSideReverse.transform.localScale.x; 
+        //projectile.side = playerSideReverse.transform.localScale.x; 
+        projectile.side = GameObject.Find("Player").transform.localScale.x;
     }
 }
