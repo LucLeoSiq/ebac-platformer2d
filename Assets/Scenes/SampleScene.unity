@@ -4510,7 +4510,7 @@ GameObject:
   - component: {fileID: 1837073578}
   - component: {fileID: 1837073579}
   m_Layer: 0
-  m_Name: Coins
+  m_Name: YellowCoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
