@@ -58,20 +58,15 @@ public class Player : MonoBehaviour
         {
             //myRigidbody2D.MovePosition(myRigidbody2D.position - velocity * Time.deltaTime
             myRigidbody2D.velocity = new Vector2(-_currentspeed, myRigidbody2D.velocity.y);
-            if (myRigidbody2D.transform.localScale.x != -1);
-            {
-                myRigidbody2D.transform.DOScaleX(-1, .1f);
-            }
+            myRigidbody2D.transform.DOScaleX(-1, .1f);
+            
             _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             //myRigidbody2D.MovePosition(myRigidbody2D.position + velocity * Time.deltaTime);
             myRigidbody2D.velocity = new Vector2(_currentspeed, myRigidbody2D.velocity.y);
-            if (myRigidbody2D.transform.localScale.x != -1)
-            {
-                myRigidbody2D.transform.DOScaleX(1, .1f);
-            }
+            myRigidbody2D.transform.DOScaleX(1, .1f);
             _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
         }
         else
