@@ -6,7 +6,7 @@ using Ebac.Core.Singleton;
 
 public class ItemManager : Singleton<ItemManager>
 {
-    public TextMeshProUGUI uiTextCoins;
+    public TextMeshProUGUI  uiTextCoins;
 
     public SOInt coins;
 
