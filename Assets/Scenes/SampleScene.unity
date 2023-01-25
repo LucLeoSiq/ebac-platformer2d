@@ -3072,6 +3072,9 @@ MonoBehaviour:
   myRigidbody2D: {fileID: 1202632917}
   healthBase: {fileID: 1202632922}
   soPlayerSetup: {fileID: 11400000, guid: d2d1d1f85770c9a48af24ef64af2e46b, type: 2}
+  collider2D: {fileID: 0}
+  distToGround: 0
+  spaceToGround: 1
 --- !u!114 &1202632922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5132,11 +5135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5944649373016830686, guid: 3c13dcd02675d4e4abd1fa53224816f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 5944649373016830686, guid: 3c13dcd02675d4e4abd1fa53224816f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 5944649373016830686, guid: 3c13dcd02675d4e4abd1fa53224816f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5193,6 +5196,10 @@ PrefabInstance:
     - target: {fileID: 7933245006663669807, guid: 3c13dcd02675d4e4abd1fa53224816f3, type: 3}
       propertyPath: m_Name
       value: PFB_ParticleSystem_Dust
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933245006663669807, guid: 3c13dcd02675d4e4abd1fa53224816f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c13dcd02675d4e4abd1fa53224816f3, type: 3}
