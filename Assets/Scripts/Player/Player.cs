@@ -22,8 +22,10 @@ public class Player : MonoBehaviour
     [Header("Jump Collision Check")]
     public Collider2D collider2D;
     public Physics2D physics2D;
+    public ParticleSystem jumpVFX;
     public float distToGround;
     public float spaceToGround = 0.1f;
+
 
 
 
@@ -116,14 +118,20 @@ public class Player : MonoBehaviour
             DOTween.Kill(myRigidbody2D.transform);
 
             HandleJumpScale();
+            PlayJumpVFX();
         }
+    }
+
+    private void PlayJumpVFX()
+    {
+        if(jumpVFX != null) jumpVFX.Play();
+        Debug.Log("Play Jump VFX");
     }
 
     private void HandleJumpScale()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody2D.transform.DOScaleY(soPlayerSetup.jumpScaleX, soPlayerSetup.animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(soPlayerSetup.ease);
             myRigidbody2D.transform.DOScaleX(soPlayerSetup.jumpScaleY, soPlayerSetup.animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(soPlayerSetup.ease);
         }
     }
