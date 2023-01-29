@@ -8,7 +8,7 @@ public class AudioRandomPlayAudioClips : MonoBehaviour
     public List<AudioSource> audioSourceList;
     private int _index = 0; 
 
-    public void PlayRandom()
+    public void PlayRandomAudioClip()
     {
         if (_index >= audioSourceList.Count) _index = 0;
 
