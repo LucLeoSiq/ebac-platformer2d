@@ -8,6 +8,7 @@ public class EnemyBase : MonoBehaviour
 
     public Animator animator;
     public HealthBase healthBase;
+    public AudioSource audioSource;
 
     public float timeToDestroy = 1f;
 
@@ -51,6 +52,7 @@ public class EnemyBase : MonoBehaviour
     private void PlayDeathAnimation()
     {
         animator.SetTrigger(triggerDeath);
+        audioSource.Play();
     }
 
     public void Damage(int amount)
