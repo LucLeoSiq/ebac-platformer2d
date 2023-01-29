@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 869646168547127410, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Name
-      value: PFB Exit
+      value: PFB_Exit
       objectReference: {fileID: 0}
     - target: {fileID: 1429438245887444772, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Pivot.x
@@ -1792,7 +1792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 869646168547127410, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Name
-      value: PFB Credits
+      value: PFB_Credits
       objectReference: {fileID: 0}
     - target: {fileID: 1429438245887444772, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Pivot.x
@@ -4079,7 +4079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 869646168547127410, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Name
-      value: PFB Play
+      value: PFB_Play
       objectReference: {fileID: 0}
     - target: {fileID: 1429438245887444772, guid: 362d9b33735bd6d498156f345505de0d, type: 3}
       propertyPath: m_Pivot.x
