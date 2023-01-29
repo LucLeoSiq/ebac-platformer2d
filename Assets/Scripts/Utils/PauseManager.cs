@@ -5,12 +5,12 @@ using Ebac.Core.Singleton;
 
 public class PauseManager : Singleton<PauseManager>
 {
-    public void Pause()
+    public void PauseGame()
     {
         Time.timeScale = 0;
     }
 
-    public void UnPause()
+    public void UnPauseGame()
     {
         Time.timeScale = 1;
     }
