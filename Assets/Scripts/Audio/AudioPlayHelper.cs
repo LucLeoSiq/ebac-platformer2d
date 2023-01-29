@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class AudioPlayHelper : MonoBehaviour
 {
+    [Header("GameOject Setup")]
+    public AudioSource audioSource;
+    
     public KeyCode keycode = KeyCode.P;
-    public AudioSource audioSource; 
+    
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(keycode))
         {
-            Play();
+            PlaySound();
         }
     }
 
-    public void Play()
+    public void PlaySound()
     {
         audioSource.Play();
     }
