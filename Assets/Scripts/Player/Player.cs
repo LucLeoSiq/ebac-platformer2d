@@ -70,7 +70,6 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            //myRigidbody2D.MovePosition(myRigidbody2D.position - velocity * Time.deltaTime
             myRigidbody2D.velocity = new Vector2(-_currentspeed, myRigidbody2D.velocity.y);
             myRigidbody2D.transform.DOScaleX(-1, .1f);
             
@@ -78,7 +77,6 @@ public class Player : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            //myRigidbody2D.MovePosition(myRigidbody2D.position + velocity * Time.deltaTime);
             myRigidbody2D.velocity = new Vector2(_currentspeed, myRigidbody2D.velocity.y);
             myRigidbody2D.transform.DOScaleX(1, .1f);
             _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
@@ -117,7 +115,6 @@ public class Player : MonoBehaviour
     private void PlayJumpVFX()
     {
         VFXManager.Instance.PlayVFXByType(VFXManager.VFXType.JUMP, transform.position);
-        //if(jumpVFX != null) jumpVFX.Play();
     }
 
     private void HandlePlayerJumpScale()
