@@ -181,6 +181,7 @@ MonoBehaviour:
   timeToHide: 1
   graphicItem: {fileID: 5399070539875050924}
   audioSource: {fileID: 2614031191467302011}
+  collider2D: {fileID: 5399070539194383540}
 --- !u!58 &5399070539194383540
 CircleCollider2D:
   m_ObjectHideFlags: 0
