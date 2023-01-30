@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class AudioTriggerTransition : MonoBehaviour
 {
-
+    [Header("GameObject Setup")]
     public AudioMixerSnapshot snapshot01;
     public AudioMixerSnapshot snapshot02;
 

@@ -16,7 +16,7 @@ MonoBehaviour:
   soStringName: {fileID: 11400000, guid: 4fb856a6fff9fa842ab9916359052bb3, type: 2}
   friction: {x: -0.3, y: 0}
   speed: 10
-  speedRun: 21
+  speedRun: 10
   forceJump: 15
   ease: 27
   jumpScaleY: 1.1
